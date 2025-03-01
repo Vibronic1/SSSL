@@ -17,45 +17,68 @@
 
 ### 1. Подготовка рабочей среды  
 - Определен IP-адрес хоста для анализа.  
+![SSSL4_1](https://github.com/user-attachments/assets/2a343cbe-be3f-472b-84b2-86b93a1b55f7)
 
 ![Скриншот 1 – Демонстрация IP-адреса хоста]  
 
 ### 2. Вход в прикладное ПО  
-- Осуществлен вход в AC-Hunter для анализа логов.  
+- Осуществлен вход в AC-Hunter для анализа логов.
+- ![SSSL4_2](https://github.com/user-attachments/assets/d7688fd9-4960-4cdd-9b95-de10076a4061)
+
 ![Скриншот 2 – Вход в прикладное ПО]  
 
 ### 3. Анализ сетевого трафика  
 
 #### 3.1 Выбор датасета для анализа  
-- Выбран датасет `dnscat2-ja3`.  
+- Выбран датасет `dnscat2-ja3`.
+![SSSL4_3](https://github.com/user-attachments/assets/802074f0-569a-44d2-ad61-103b0129f346)
+
 ![Скриншот 3 – Выбор датасета dnscat2-ja3]  
 
-- Изучен интерфейс AC-Hunter.  
+- Изучен интерфейс AC-Hunter.
+![SSSL4_4](https://github.com/user-attachments/assets/ac308f22-234c-4736-be78-2de73b44ff54)
+
+ 
 ![Скриншот 4 – Интерфейс AC-Hunter]  
 
 #### 3.2 Фильтрация легитимного трафика  
-- Добавлено легитимное подключение к Skype в safelist.  
+- Добавлено легитимное подключение к Skype в safelist.
+  ![SSSL4_5](https://github.com/user-attachments/assets/4da442e6-c76d-4f27-8ef3-726802c4a42f)
+
 ![Скриншот 5 – Добавление легитимного подключения в safelist]  
 
 ### 4. Анализ логов  
 
 #### 4.1 Загрузка и исследование логов (1 часть работы)  
 - Импортированы логи в AC-Hunter.  
+![SSSL4_6](https://github.com/user-attachments/assets/408faa16-94d7-4b0b-9b8c-247b4686fcf6)
+
 ![Скриншот 6 – Импорт логов]  
 
 - Выбраны логи для обработки.  
+![SSSL4_7](https://github.com/user-attachments/assets/644282d2-e9a5-4c16-9e5f-276f0811c6ce)
+
 ![Скриншот 7 – Выбор логов]  
 
 - Найдено подозрительное подключение с IP **104.248.234.238**.  
+![SSSL4_8](https://github.com/user-attachments/assets/7dccf50d-5271-41b9-82c6-2342912aec82)
+
 ![Скриншот 8 – Первая запись]  
 
 - Обнаружены сервисные соединения Windows.  
+![SSSL4_9](https://github.com/user-attachments/assets/661e925a-46c3-4404-8c92-866bf783e73b)
+
 ![Скриншот 9 – Вторая запись]  
 
 - Проанализированы логи подозрительного подключения.  
+![SSSL4_10](https://github.com/user-attachments/assets/93a545cc-b2b1-43e7-ad3d-8ab012d05fc2)
+
 ![Скриншот 10 – Анализ логов]  
 
 - Выполнена проверка подозрительных IP-адресов через VirusTotal.  
+![SSSL4_11](https://github.com/user-attachments/assets/39d86680-6697-47da-be20-d3b468e9c1a8)
+![SSSL4_12](https://github.com/user-attachments/assets/8ba04dd9-6b7f-4bfd-a014-1b5c4da403a8)
+
 ![Скриншоты 11-12 – Проверка в VirusTotal]  
 
 ### Выводы по 1 части анализа  
@@ -68,10 +91,17 @@
 
 #### 4.2 Загрузка и анализ логов (2 часть работы)  
 - Загрузка логов в AC-Hunter.  
+![SSSL4_13](https://github.com/user-attachments/assets/94d6084d-6997-4141-9795-a79c1db19999)
+
 ![Скриншот 13 – Загрузка логов]  
 
 - Выявлено **большое количество DNS-запросов**.  
+![SSSL4_14](https://github.com/user-attachments/assets/74e69389-c2b1-4e8f-9d36-a160573c66a4)
+
 ![Скриншот 14 – Анализ в AC-Hunter]  
+
+![SSSL4_15](https://github.com/user-attachments/assets/6341b945-6814-4dda-ade9-c00b6b04cb0a)
+![SSSL4_16](https://github.com/user-attachments/assets/d0fd9e7e-eaea-4c4f-a195-de69bbcb7c9a)
 
 ![Скриншоты 15-16 – Гистограммы DNS-запросов]  
 
@@ -82,15 +112,23 @@
 
 #### 4.3 Загрузка и анализ логов (3 часть работы)  
 - Загрузка логов.  
+![SSSL4_17](https://github.com/user-attachments/assets/33fe9649-be37-4cf0-9745-474587f4284f)
+
 ![Скриншот 17 – Загрузка логов]  
 
 - Анализ записей в AC-Hunter.  
+![SSSL4_18](https://github.com/user-attachments/assets/ffc4a8f0-7ebd-47c4-9485-479ef166ed32)
+
 ![Скриншот 18 – Анализ логов]  
 
 - Обнаружено подозрительное имя в Skype.  
+![SSSL4_19](https://github.com/user-attachments/assets/e0495539-14e6-452b-a46c-bbab4692388a)
+
 ![Скриншот 19 – Подозрительное имя Skype]  
 
 - Проверка IP-адреса через VirusTotal показала высокий уровень риска.  
+![SSSL4_20](https://github.com/user-attachments/assets/b73c5b65-c435-4096-9a94-3694b2e480bc)
+
 ![Скриншот 20 – Проверка в VirusTotal]  
 
 ### Выводы по 3 части анализа  
